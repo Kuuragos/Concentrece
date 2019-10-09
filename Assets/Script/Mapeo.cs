@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class Mapeo : MonoBehaviour
 {
-    public List<Material>myList = new List<Material>(16);
-    public GameObject fichas;
-    public  Material temp;
-
+    public Material[] skins = new Material[8];
+    public List<Material>myMaterial = new List<Material>(16);
+    public  GameObject fichas;
+    public Material temp;
+    Dictionary<Material, nombre> dic = new Dictionary<Material, nombre>();
+    private void Awake()
+    {
+        Diccionario();
+    }
     void Start()
     {
-        Shuffle(myList);
-        for (int i = 0; i < 16; i++)
+        
+        Shuffle(ref myMaterial);
+
+        for (int i = 0; i <= 15; i++)
         {
-            foreach (var item in myList)
+
+            foreach (var item in myMaterial)
             {
                 int index=0;
-                temp = myList[index];
+                temp = myMaterial[index];
                 index++;
             }
-            fichas.transform.GetChild(i).GetChild(0).GetComponent<MeshCollider>().material = temp;
-            myList.Remove(temp);
+            fichas.transform.GetChild(i).GetChild(0).GetComponent<MeshRenderer>().material = temp;
+            
+            myMaterial.Remove(temp);
         }
     }
 
@@ -29,11 +38,12 @@ public class Mapeo : MonoBehaviour
     {
         
     }
-    public void Shuffle(List<Material> list)
+    public void Shuffle(ref List<Material> list)
     {
         int n = list.Count;
         while(n>1)
         {
+            n--;
             int k = Random.Range(0, n + 1);
             Material valu = list[k];
             list[k] = list[n];
@@ -41,4 +51,20 @@ public class Mapeo : MonoBehaviour
 
         }
     }
+    public void Diccionario ()
+    {
+        dic.Add(skins[0], nombre.bird);
+        dic.Add(skins[1], nombre.bird);
+        dic.Add(skins[2], nombre.dragon);
+        dic.Add(skins[3], nombre.hawk);
+        dic.Add(skins[4], nombre.head);
+        dic.Add(skins[5], nombre.man);
+        dic.Add(skins[6], nombre.manS);
+        dic.Add(skins[7], nombre.owl);
+    }
+   
+}
+enum nombre
+{
+    bird,bull,dragon,hawk,head,man,manS,owl
 }
