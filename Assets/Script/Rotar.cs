@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Rotar : MonoBehaviour
 {
+    public nombre myType;
+
     public bool show = false;
     private void OnMouseDown()
     {
@@ -19,11 +21,11 @@ public class Rotar : MonoBehaviour
             transform.rotation = Quaternion.Euler(Vector3.Lerp(transform.rotation.eulerAngles, Vector3.up * 180, 2 * Time.deltaTime));
 
         }
-        //else
-        //{
-        //    transform.rotation = Quaternion.Euler(Vector3.Lerp(transform.rotation.eulerAngles, Vector3.zero, 2 * Time.deltaTime));
+        else
+        {
+            transform.rotation = Quaternion.Euler(Vector3.Lerp(transform.rotation.eulerAngles, Vector3.zero, 2 * Time.deltaTime));
 
-        //}
+        }
     }
     public void Hide()
     {

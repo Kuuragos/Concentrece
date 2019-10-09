@@ -5,7 +5,9 @@ using UnityEngine;
 public class Mapeo : MonoBehaviour
 {
     public Material[] skins = new Material[8];
-    public List<Material>myMaterial = new List<Material>(16);
+
+    public List<Material> myMaterial = new List<Material>();
+
     public  GameObject fichas;
     public Material temp;
     Dictionary<Material, nombre> dic = new Dictionary<Material, nombre>();
@@ -15,21 +17,20 @@ public class Mapeo : MonoBehaviour
     }
     void Start()
     {
-        
+        for (int i = 0; i < skins.Length; i++)
+        {
+            myMaterial.Add(skins[i]);
+            myMaterial.Add(skins[i]);
+        }
+
+
         Shuffle(ref myMaterial);
 
         for (int i = 0; i <= 15; i++)
         {
+            fichas.transform.GetChild(i).GetChild(0).GetComponent<MeshRenderer>().material = myMaterial[i];
+            fichas.transform.GetChild(i).GetChild(0).GetComponent<Rotar>().myType = dic[ myMaterial[i]];
 
-            foreach (var item in myMaterial)
-            {
-                int index=0;
-                temp = myMaterial[index];
-                index++;
-            }
-            fichas.transform.GetChild(i).GetChild(0).GetComponent<MeshRenderer>().material = temp;
-            
-            myMaterial.Remove(temp);
         }
     }
 
@@ -54,7 +55,7 @@ public class Mapeo : MonoBehaviour
     public void Diccionario ()
     {
         dic.Add(skins[0], nombre.bird);
-        dic.Add(skins[1], nombre.bird);
+        dic.Add(skins[1], nombre.bull);
         dic.Add(skins[2], nombre.dragon);
         dic.Add(skins[3], nombre.hawk);
         dic.Add(skins[4], nombre.head);
@@ -64,7 +65,7 @@ public class Mapeo : MonoBehaviour
     }
    
 }
-enum nombre
+public enum nombre
 {
     bird,bull,dragon,hawk,head,man,manS,owl
 }
