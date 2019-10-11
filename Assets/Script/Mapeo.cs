@@ -6,11 +6,10 @@ public class Mapeo : MonoBehaviour
 {
     public Material[] skins = new Material[8];
 
-    public List<Material> myMaterial = new List<Material>();
+    public static List<Material> myMaterial = new List<Material>();
 
     public  GameObject fichas;
-    public Material temp;
-    Dictionary<Material, nombre> dic = new Dictionary<Material, nombre>();
+   public Dictionary<Material, nombre> dic = new Dictionary<Material, nombre>();
     private void Awake()
     {
         Diccionario();
