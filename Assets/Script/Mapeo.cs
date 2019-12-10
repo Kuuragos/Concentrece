@@ -83,14 +83,14 @@ public class Mapeo : MonoBehaviour
     }
     public void Diccionario ()
     {
-        dic.Add(skins[0], nombre.Bird);
-        dic.Add(skins[1], nombre.Bull);
-        dic.Add(skins[2], nombre.Dragon);
-        dic.Add(skins[3], nombre.Hawk);
-        dic.Add(skins[4], nombre.Head);
-        dic.Add(skins[5], nombre.Man);
-        dic.Add(skins[6], nombre.ManS);
-        dic.Add(skins[7], nombre.Owl);
+        dic.Add(skins[0], nombre.Pikachu);
+        dic.Add(skins[1], nombre.Ninetales);
+        dic.Add(skins[2], nombre.Gardevoir);
+        dic.Add(skins[3], nombre.Jirachi);
+        dic.Add(skins[4], nombre.MewTwo);
+        dic.Add(skins[5], nombre.Milotic);
+        dic.Add(skins[6], nombre.Uxie);
+        dic.Add(skins[7], nombre.Metagross);
 
     }
     public void Rellenar(GameObject carta)
@@ -140,5 +140,5 @@ public class Mapeo : MonoBehaviour
 }
 public enum nombre
 {
-   Bird,Bull,Dragon,Hawk,Head,Man,ManS,Owl 
+   Pikachu,Ninetales,Gardevoir,Jirachi,MewTwo,Milotic,Uxie,Metagross 
 }

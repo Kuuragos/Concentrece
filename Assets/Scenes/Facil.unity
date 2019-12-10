@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964127, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -375,7 +375,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cef4886250139e944a4a359596687d1e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d1575e91ea07684788dad4071633d62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -539,14 +539,14 @@ MonoBehaviour:
   tiempo: {fileID: 862043410}
   puntos: {fileID: 521694407}
   skins:
-  - {fileID: 2100000, guid: bdd8b06f32147ab438bb645f202b1255, type: 2}
-  - {fileID: 2100000, guid: cc2f1fed5784efd43a12b20ff1011243, type: 2}
-  - {fileID: 2100000, guid: ce7ca283c4cf4ae4a9e6bad554562db9, type: 2}
-  - {fileID: 2100000, guid: 11d4202f014ddd54f93cef9a8ad4dae8, type: 2}
-  - {fileID: 2100000, guid: be154925d5da2544392bf33bcdad6e24, type: 2}
-  - {fileID: 2100000, guid: bfa8ee4c1b91f5e4696e7e2c08cdffa6, type: 2}
-  - {fileID: 2100000, guid: 71efff4727b18144db05ddcfff218288, type: 2}
-  - {fileID: 2100000, guid: 949e721fbc325a34a8065f00571e56d4, type: 2}
+  - {fileID: 2100000, guid: c1651c8e5578939419b08d8879c11f9d, type: 2}
+  - {fileID: 2100000, guid: 2fe3099e04f67e141a2a090b47e1f155, type: 2}
+  - {fileID: 2100000, guid: 05e03f98104c6a249bb6e242413ccdb9, type: 2}
+  - {fileID: 2100000, guid: 93704860ab72f1e4a945c92c42bba18f, type: 2}
+  - {fileID: 2100000, guid: 0d324dc9b6300e145aa4cbac40ace054, type: 2}
+  - {fileID: 2100000, guid: 2a7a0d8b56f5f7b4bb39935c7861ba27, type: 2}
+  - {fileID: 2100000, guid: 0145f130c9fefcf4f974b1ccf5b5114f, type: 2}
+  - {fileID: 2100000, guid: a67ad8f4684b3434e8a2d018a8af9936, type: 2}
   win: {fileID: 137013888}
   youLose: {fileID: 1883591784}
   fichas: {fileID: 469417302}
@@ -716,9 +716,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Puntos:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad8def0ce78e1c3488fbdccdf87226a1, type: 2}
-  m_sharedMaterial: {fileID: 21371049284991558, guid: ad8def0ce78e1c3488fbdccdf87226a1,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -743,8 +742,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1193,9 +1192,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Tiempo:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad8def0ce78e1c3488fbdccdf87226a1, type: 2}
-  m_sharedMaterial: {fileID: 21371049284991558, guid: ad8def0ce78e1c3488fbdccdf87226a1,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1883,7 +1881,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 971c22aaa928197428df1c9791909389, type: 2}
+  - {fileID: 2100000, guid: c80241716f66f7a4eaa754c6d8ebf9fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2604,7 +2602,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f8834e23af359994cba18ed17d696673, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97cdf0f14962f1047890e09b637fc3ea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

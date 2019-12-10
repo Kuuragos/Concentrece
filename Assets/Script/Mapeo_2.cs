@@ -85,22 +85,22 @@ public class Mapeo_2 : MonoBehaviour
     }
     public void Diccionario()
     {
-        dik.Add(skins[0], nombre1.Antiguo);
-        dik.Add(skins[1], nombre1.Arbol);
-        dik.Add(skins[2], nombre1.Baldur);
-        dik.Add(skins[3], nombre1.Brock);
-        dik.Add(skins[4], nombre1.Casa);
-        dik.Add(skins[5], nombre1.Dragon);
-        dik.Add(skins[6], nombre1.Elfo);
-        dik.Add(skins[7], nombre1.Freya);
-        dik.Add(skins[8], nombre1.Kratos);
-        dik.Add(skins[9], nombre1.Libro);
-        dik.Add(skins[10], nombre1.Mimir);
-        dik.Add(skins[11], nombre1.Orco);
-        dik.Add(skins[12], nombre1.Serpiente);
-        dik.Add(skins[13], nombre1.Sindri);
-        dik.Add(skins[14], nombre1.Thor);
-        dik.Add(skins[15], nombre1.Valkyria);
+        dik.Add(skins[0], nombre1.Pikachu);
+        dik.Add(skins[1], nombre1.Articuno);
+        dik.Add(skins[2], nombre1.Chandelure);
+        dik.Add(skins[3], nombre1.Cresselia);
+        dik.Add(skins[4], nombre1.Gardevoir);
+        dik.Add(skins[5], nombre1.Jirachi);
+        dik.Add(skins[6], nombre1.Latias);
+        dik.Add(skins[7], nombre1.Latios);
+        dik.Add(skins[8], nombre1.Mawile);
+        dik.Add(skins[9], nombre1.Metagross);
+        dik.Add(skins[10], nombre1.MewTwo);
+        dik.Add(skins[11], nombre1.Milotic);
+        dik.Add(skins[12], nombre1.Ninetales);
+        dik.Add(skins[13], nombre1.Uxie);
+        dik.Add(skins[14], nombre1.Volcarona);
+        dik.Add(skins[15], nombre1.Zorua);
 
     }
     public void Rellenar(GameObject carta)
@@ -150,5 +150,5 @@ public class Mapeo_2 : MonoBehaviour
 }
 public enum nombre1
 {
-    Antiguo, Arbol, Baldur, Brock, Casa, Dragon, Elfo, Freya, Kratos, Libro, Mimir, Orco, Serpiente, Sindri, Thor, Valkyria
+    Pikachu, Articuno, Chandelure, Cresselia, Gardevoir, Jirachi, Latias, Latios, Mawile, Metagross, MewTwo, Milotic, Ninetales, Uxie, Volcarona, Zorua
 }
